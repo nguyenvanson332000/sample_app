@@ -1,5 +1,5 @@
 en:
-  app_name: "Sample_App"
+  sample_app: "Sample_App"
   layouts:
     header:
       home: "Home"
@@ -14,3 +14,11 @@ en:
       title: "Help"
       h1_html: "<h1>Looking for some <i>Helps<i>?</h1>"
       para_html: "Find help about Ruby on Rails <a href=\"http://www.railstutorial.org/help\">here</a>."
+    about:
+      title: "About?"
+      h1_html: "About"
+      para_html: "The <a href=\"https://www.railstutorial.org/\"><em>Ruby on Rails Tutorial</em></a>, is a to teach web development with <a href=\"https://rubyonrails.org/\">Ruby on Rails</a>.This is the sample app for the tutorial."
+
+
+
+

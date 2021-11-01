@@ -1,5 +1,5 @@
 vi:
-  app_name: "Sample_App"
+  sample_app: "Sample_App"
   layouts:
     header:
       home: "Trang Chủ"
@@ -14,3 +14,7 @@ vi:
       title: "Trợ giúp"
       h1_html: "<h1>Đang tìm kiếm <i>Trợ giúp<i>?</h1>"
       para_html: "Tìm hiểu về Ruby on Rails <a href=\"http://www.railstutorial.org/help\">tại đây:</a>."
+    about:
+      title: "Vấn đề?"
+      h1_html: "<h1>Đang tìm kiếm <i><i>?</h1>"
+      para_html: "Sách <a href=\"https://www.railstutorial.org/\"><em>Ruby on Rails Tutorial</em></a>, là sách dạy về lập trình <a href=\"https://rubyonrails.org/\">Ruby on Rails</a> Đây là ứng dụng mẫu cho hướng dẫn."
