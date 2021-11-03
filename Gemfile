@@ -9,6 +9,7 @@ group :development, :test do
   gem "rubocop-rails", "~> 2.3.2", require: false
 end
 
+
 gem "config"
 gem "bcrypt", "3.1.13"
 gem "rails-i18n"
