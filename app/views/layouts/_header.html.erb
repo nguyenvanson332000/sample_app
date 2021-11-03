@@ -1,0 +1,14 @@
+<header>
+  <nav class="navbar fixed-top navbar-expand navbar-inverse">
+    <div class="container">
+      <%= link_to t("sample_app"), root_path, class: "navbar-header navbar-brand" %>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item"><%= link_to t(".home"), "http://127.0.0.1:3000/static_pages/home" %></li>
+        <li class="nav-item"><%= link_to t(".help"), "http://127.0.0.1:3000/static_pages/help" %></li>
+        <li class="nav-item"><%= link_to t(".login"), "#" %></li>
+        <li><%= link_to "English", locale:"en" %></li>
+        <li><%= link_to "Vietnamese", locale:"vi" %></li>
+      </ul>
+    </div>
+  </nav>
+</header>
