@@ -13,6 +13,7 @@ gem "config"
 gem "bcrypt", "3.1.13"
 gem "rails-i18n"
 gem "bootstrap-sass", "3.4.1"
+
 gem "rails", "~> 6.1.4", ">= 6.1.4.1"
 gem "sqlite3", "~> 1.4"
 gem "puma", "~> 5.0"
