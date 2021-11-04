@@ -7,7 +7,6 @@ vi:
       login: "Đăng Nhập"
   static_pages:
     home:
-      title: "Trang Chủ"
       h1_html: "Chào mừng đến với <i>Sample_App</i>"
       para_html: "Đây là trang chủ cho ứng dụng <a href=\"http://www.railstutorial.org\">Ruby on Rails Tutorial</a>."
       sign_up: "Đăng ký ngay"
