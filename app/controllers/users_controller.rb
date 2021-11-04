@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
   def show
-    # @user = User.find(params[:id])
     @user = User.find_by id: params[:id]
     return if @user.present?
 
@@ -15,9 +14,11 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      flash[:success] = t "welcome__message", username: @user.name
+      log_in @user
+      flash[:success] = t "welcome_message", username: @user.name
       redirect_to @user
     else
+      flash[:warning] = t "registration_failed"
       render :new
     end
   end
@@ -25,7 +26,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:name, :email, :password,
-                                 :password_confirmation)
+    params.require(:user).permit :name, :email, :password,
+                                 :password_confirmation
   end
 end

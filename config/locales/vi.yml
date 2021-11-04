@@ -5,8 +5,11 @@ vi:
         name: "Họ tên"
         email: "Địa chỉ email"
         password: "Mật khẩu"
-  welcome__message: "Xin chào, <i>%{username}</i>"
+  welcome_message: "Xin chào, <i>%{username}</i>"
+  email_or_password_incorrect: "Email hoặc mật khẩu vừa nhập không chính xác"
   user_not_found: "User không tồn tại"
+  registration_failed: "vui lòng kiểm tra và nhập lại thông tin đăng kí"
+  login_invalid: "Email hoặc mật khẩu vừa nhập không chính xác"
   sample_app: "Sample_App"
   layouts:
     header:
@@ -14,6 +17,10 @@ vi:
       help: "Trợ Giúp"
       login: "Đăng Nhập"
       signup: "Đăng ký"
+      profile: "Hồ sơ"
+      settings: "Cài đặt"
+      account: "Tài khoản"
+      logout: "Đăng xuất"
   shared:
     error_messages:
       please_resolve_errors:
@@ -37,3 +44,8 @@ vi:
       signup: "Đăng ký"
       confirmation: "Xác nhận mật khẩu"
       submit: "Tạo tài khoản"
+  sessions:
+    new:
+      new_user: "Đăng ký người dùng mới?"
+      signup_now: "Đăng ký ngay!"
+      submit: "Đăng nhập"
