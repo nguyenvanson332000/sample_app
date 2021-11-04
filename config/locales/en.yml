@@ -5,8 +5,10 @@ en:
         name: "Full name"
         email: "Email address"
         password: "Password"
-  welcome__message: "Hello, <i>%{username}</i>"
+  welcome_message: "Hello, <i>%{username}</i>"
+  email_or_password_incorrect: "Your email or password is incorrect"
   user_not_found: "User not found"
+  login_invalid: "Invalid email/password combination"
   sample_app: "Sample_App"
   layouts:
     header:
@@ -14,6 +16,10 @@ en:
       help: "Help"
       login: "Login"
       signup: "Register"
+      profile: "Profile"
+      settings: "Settings"
+      account: "Account"
+      logout: "Logout"
   shared:
     error_messages:
       please_resolve_errors:
@@ -37,6 +43,11 @@ en:
       signup: "Register"
       confirmation: "Confirm password"
       submit: "Create"
+  sessions:
+    new:
+      new_user: "Create Account ?"
+      signup_now: "Register now!"
+      submit: "Login"
 
 
 
