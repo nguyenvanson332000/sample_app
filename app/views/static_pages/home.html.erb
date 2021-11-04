@@ -1,3 +1,8 @@
-<% provide :title, t(".title") %>
-<h1><%= t ".h1_html" %></h1>
-<p><%= t ".para_html" %></p>
+<div class="center jumbotron">
+  <div class="container">
+    <h1>Welcome to the Sample App</h1>
+    <h2><%= t ".h1_html" %></h2>
+    <%= link_to t(".sign_up"), "#", class: "btn btn-primary btn-lg" %>
+  </div>
+</div>
+
