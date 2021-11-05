@@ -12,8 +12,17 @@
         <li><%= link_to "Vietnamese", locale:"vi" %></li>
     </ul>
   </head>
-  <body>
+  <body class="bg-3ec">
     <%= render "layouts/header" %>
+    <div class="sticky-top">
+      <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>">
+          <div class="container">
+            <%= message.html_safe %>
+          </div>
+        </div>
+      <% end %>
+    </div>
     <%= yield %>
   </body>
 </html>
