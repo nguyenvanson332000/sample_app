@@ -5,8 +5,11 @@ en:
         name: "Full name"
         email: "Email address"
         password: "Password"
-  welcome__message: "Hello, <i>%{username}</i>"
+  welcome_message: "Hello, <i>%{username}</i>"
+  email_or_password_incorrect: "Your email or password is incorrect"
   user_not_found: "User not found"
+  registration_failed: "Please check and enter registration information"
+  login_invalid: "Invalid email/password combination"
   sample_app: "Sample_App"
   layouts:
     header:
@@ -14,6 +17,10 @@ en:
       help: "Help"
       login: "Login"
       signup: "Register"
+      profile: "Profile"
+      settings: "Settings"
+      account: "Account"
+      logout: "Logout"
   shared:
     error_messages:
       please_resolve_errors:
@@ -32,12 +39,17 @@ en:
       title: "About?"
       h1_html: "About"
       para_html: "The <a href=\"https://www.railstutorial.org/\"><em>Ruby on Rails Tutorial</em></a>, is a to teach web development with <a href=\"https://rubyonrails.org/\">Ruby on Rails</a>.This is the sample app for the tutorial."
-
   users:
     new:
       signup: "Register"
       confirmation: "Confirm password"
       submit: "Create"
+  sessions:
+    new:
+      new_user: "Create Account ?"
+      signup_now: "Register now!"
+      submit: "Login"
+
 
 
 
