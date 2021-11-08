@@ -2,12 +2,15 @@ class SessionsController < ApplicationController
   def new; end
 
   def create
-    user = User.find_by(email: params[:session][:email].downcase)
-    if user&.authenticate(params[:session][:password])
+    session_params = params[:session]
+    user = User.find_by(email: session_params[:email].downcase)
+    if user&.authenticate(session_params[:password])
       log_in user
+      session_params[:remember_me]
+      flash[:success] = t "welcome_message", username: user.name
       redirect_to user
     else
-      flash.now[:danger] = t"login_invalid"
+      flash.now[:danger] = t "login_invalid"
       render :new
     end
   end

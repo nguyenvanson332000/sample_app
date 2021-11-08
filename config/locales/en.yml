@@ -8,6 +8,7 @@ en:
   welcome_message: "Hello, <i>%{username}</i>"
   email_or_password_incorrect: "Your email or password is incorrect"
   user_not_found: "User not found"
+  registration_failed: "Please check and enter registration information"
   login_invalid: "Invalid email/password combination"
   sample_app: "Sample_App"
   layouts:
@@ -48,6 +49,7 @@ en:
       new_user: "Create Account ?"
       signup_now: "Register now!"
       submit: "Login"
+      Remember_checkbox: "Remember me on this computer"
 
 
 
