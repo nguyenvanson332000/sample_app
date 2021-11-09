@@ -10,7 +10,11 @@ vi:
   user_not_found: "User không tồn tại"
   registration_failed: "vui lòng kiểm tra và nhập lại thông tin đăng kí"
   login_invalid: "Email hoặc mật khẩu vừa nhập không chính xác"
+  Profile_updated: "Hồ sơ cá nhân đã cập nhật"
+  delete_success: "Người dùng đã bị xóa"
+  delete_fail: "Xóa thất bại!"
   sample_app: "Sample_App"
+  login: "Xin vui lòng đăng nhập."
   layouts:
     header:
       home: "Trang Chủ"
@@ -21,6 +25,7 @@ vi:
       settings: "Cài đặt"
       account: "Tài khoản"
       logout: "Đăng xuất"
+      Users: "Danh sách người dùng"
   shared:
     error_messages:
       please_resolve_errors:
@@ -44,6 +49,16 @@ vi:
       signup: "Đăng ký"
       confirmation: "Xác nhận mật khẩu"
       submit: "Tạo tài khoản"
+    index:
+      title: "Tất cả người dùng"
+    edit:
+      title: "Cập nhật người dùng"
+      h1_html: "Cập nhật thông tin của bạn"
+      submit: "Cập nhật thay đổi"
+      a_html: "<a href=\"https://gravatar.com/emails\" target=\"_blank\">Thay đổi</a>"
+    user:
+      delete_user: "Xoa"
+      confirm: "Ban chac chan ?"
   sessions:
     new:
       new_user: "Đăng ký người dùng mới?"

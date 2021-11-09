@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  attr_accessor :remember_token
   before_save{email.downcase!}
   validates :name, presence: true,
                    length: {maximum: Settings.max_length.name_50}
@@ -9,7 +10,8 @@ class User < ApplicationRecord
                     uniqueness: true
   has_secure_password
   validates :password, presence: true,
-                       length: {minimum: Settings.min_length.password_6}
+                       length: {minimum: Settings.min_length.password_6},
+                       allow_nil: true
 
   class << self
     def digest string
