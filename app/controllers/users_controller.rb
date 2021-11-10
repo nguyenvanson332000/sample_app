@@ -21,6 +21,7 @@ class UsersController < ApplicationController
       flash[:success] = t "welcome_message", username: @user.name
       redirect_to @user
     else
+      flash[:warning] = t "registration_failed"
       render :new
     end
   end
