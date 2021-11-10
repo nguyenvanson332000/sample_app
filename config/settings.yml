@@ -1,0 +1,8 @@
+max_length:
+  email_255: 255
+  name_50: 50
+min_length:
+  password_6: 6
+avatar:
+  size: 80
+  user_size: 50
