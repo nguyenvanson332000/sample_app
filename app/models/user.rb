@@ -10,7 +10,8 @@ class User < ApplicationRecord
                     uniqueness: true
   has_secure_password
   validates :password, presence: true,
-                       length: {minimum: Settings.min_length.password_6}
+                       length: {minimum: Settings.min_length.password_6},
+                       allow_nil: true
 
   class << self
     def digest string

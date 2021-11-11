@@ -10,7 +10,11 @@ en:
   user_not_found: "User not found"
   registration_failed: "Please check and enter registration information"
   login_invalid: "Invalid email/password combination"
+  Profile_updated: "Profile updated"
   sample_app: "Sample_App"
+  delete_success: "User deleted"
+  delete_fail: "Delete fail!"
+  login: "Please log in."
   layouts:
     header:
       home: "Home"
@@ -21,6 +25,7 @@ en:
       settings: "Settings"
       account: "Account"
       logout: "Logout"
+      Users: "List Users"
   shared:
     error_messages:
       please_resolve_errors:
@@ -43,14 +48,23 @@ en:
     new:
       signup: "Register"
       confirmation: "Confirm password"
-      submit: "Create"
+      submit: "Create my account"
+    index:
+      title: "All users"
+    edit:
+      title: "Edit user"
+      h1_html: "Update your profile"
+      submit: "Save changes"
+      a_html: "<a href=\"https://gravatar.com/emails\" target=\"_blank\">Change</a>"
+    user:
+      delete_user: "delete"
+      confirm: "Are you sure ?"
   sessions:
     new:
       new_user: "Create Account ?"
       signup_now: "Register now!"
       submit: "Login"
       Remember_checkbox: "Remember me on this computer"
-
 
 
 
