@@ -5,6 +5,7 @@ en:
         name: "Full name"
         email: "Email address"
         password: "Password"
+        password_confirmation: "Password confirmation"
   welcome_message: "Hello, <i>%{username}</i>"
   email_or_password_incorrect: "Your email or password is incorrect"
   user_not_found: "User not found"
@@ -15,6 +16,10 @@ en:
   delete_success: "User deleted"
   delete_fail: "Delete fail!"
   login: "Please log in."
+  active_sucess: "Account activated!"
+  active_fail: "Invalid activation link"
+  active_message: "Account not activated. Check your email for the activation link."
+  active_danger: "Please check your email to activate your account."
   layouts:
     header:
       home: "Home"

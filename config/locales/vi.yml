@@ -5,6 +5,7 @@ vi:
         name: "Họ tên"
         email: "Địa chỉ email"
         password: "Mật khẩu"
+        password_confirmation: "Nhập Lại mật khẩu"
   welcome_message: "Xin chào, <i>%{username}</i>"
   email_or_password_incorrect: "Email hoặc mật khẩu vừa nhập không chính xác"
   user_not_found: "User không tồn tại"
@@ -15,6 +16,11 @@ vi:
   delete_fail: "Xóa thất bại!"
   sample_app: "Sample_App"
   login: "Xin vui lòng đăng nhập."
+  active_sucess: "Tài khoản đã được kích hoạt!"
+  active_fail: "Liên kết kích hoạt không hợp lệ"
+  active_message: "Tài khoản chưa được kích hoạt.
+  Kiểm tra email của bạn để biết liên kết kích hoạt."
+  active_danger: "Hãy kiểm tra email của bạn để kích hoạt tài khoản của bạn."
   layouts:
     header:
       home: "Trang Chủ"
