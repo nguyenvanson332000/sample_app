@@ -3,3 +3,8 @@ max_length:
   name_50: 50
 min_length:
   password_6: 6
+avatar:
+  size: 80
+  user_size: 50
+content:
+  length: 140

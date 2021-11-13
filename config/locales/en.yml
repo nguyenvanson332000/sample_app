@@ -5,11 +5,31 @@ en:
         name: "Full name"
         email: "Email address"
         password: "Password"
+        password_confirmation: "Password confirmation"
   welcome_message: "Hello, <i>%{username}</i>"
   email_or_password_incorrect: "Your email or password is incorrect"
   user_not_found: "User not found"
+  registration_failed: "Please check and enter registration information"
   login_invalid: "Invalid email/password combination"
+  Profile_updated: "Profile updated"
   sample_app: "Sample_App"
+  delete_success: "User deleted"
+  delete_fail: "Delete fail!"
+  login: "Please log in."
+  active_sucess: "Account activated!"
+  active_fail: "Invalid activation link"
+  active_message: "Account not activated. Check your email for the activation link."
+  active_danger: "Please check your email to activate your account."
+  notify_info: "Email sent with password reset instructions"
+  notify_danger_create: "Email address not found"
+  notify_danger_check_expiration: "Password reset has expired."
+  format_image: "must be a valid image format"
+  size_image: "should be less than 5MB"
+  micropost_create_success: "Micropost created!"
+  micropost_destroy_success: "Micropost deleted"
+  micropost_destroy_danger: "Deleted fail"
+  not_permit: "user not permit"
+  valid_user: "user is valid"
   layouts:
     header:
       home: "Home"
@@ -20,13 +40,27 @@ en:
       settings: "Settings"
       account: "Account"
       logout: "Logout"
+      Users: "List Users"
   shared:
     error_messages:
-      please_resolve_errors:
-        one: "Please resolve %{count} error"
-        other: "Please resolve %{count} errors"
+      contains: "The form contains"
+      btn_error: "error"
+    user_info:
+      my_profile: "view my profile"
+      micropost: "micropost"
+    micropost_form:
+      content: "Compose new micropost..."
+      type_image: "image/jpeg,image/gif,image/png"
+    stats:
+      following: "following"
+      followers: "followers"
+  microposts:
+    micropost:
+      button_delete: "delete"
+      confirm: "You sure?"
   static_pages:
     home:
+      h3_html: "Micropost Feed"
       h1_html: "Welcome to <i>My Sample App</i>"
       para_html: "This is the home page for the <a href=\"http://www.railstutorial.org\">Ruby on Rails Tutorial</a> sample application."
       sign_up: "Sign up now!"
@@ -42,12 +76,38 @@ en:
     new:
       signup: "Register"
       confirmation: "Confirm password"
-      submit: "Create"
+      submit: "Create my account"
+    index:
+      title: "All users"
+    edit:
+      title: "Edit user"
+      h1_html: "Update your profile"
+      submit: "Save changes"
+      a_html: "<a href=\"https://gravatar.com/emails\" target=\"_blank\">Change</a>"
+    user:
+      delete_user: "delete"
+      confirm: "Are you sure ?"
+    show_follow:
+      profile: "view my profile"
+      microposts: "Microposts :"
+    unfollow:
+      btn_unfollow: "Unfollow"
+    follow:
+      btn_follow: "Follow"
   sessions:
     new:
       new_user: "Create Account ?"
       signup_now: "Register now!"
       submit: "Login"
+      Remember_checkbox: "Remember me on this computer"
+      a_forgot_password: "(forgot password)"
+  password_resets:
+    edit:
+      title_html: "Reset password"
+      h1_html: "Reset password"
+    new:
+      title_html: "Forgot password"
+      h1_html: "Forgot password"
 
 
 
