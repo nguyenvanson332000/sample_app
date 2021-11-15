@@ -21,6 +21,9 @@ vi:
   active_message: "Tài khoản chưa được kích hoạt.
   Kiểm tra email của bạn để biết liên kết kích hoạt."
   active_danger: "Hãy kiểm tra email của bạn để kích hoạt tài khoản của bạn."
+  notify_info: "Email được gửi kèm theo hướng dẫn đặt lại mật khẩu"
+  notify_danger_create: "Không tìm thấy địa chỉ email"
+  notify_danger_check_expiration: "Đặt lại mật khẩu đã hết hạn."
   layouts:
     header:
       home: "Trang Chủ"
@@ -71,3 +74,11 @@ vi:
       signup_now: "Đăng ký ngay!"
       submit: "Đăng nhập"
       Remember_checkbox: "Ghi nhớ đăng nhập"
+      a_forgot_password: "(Quên mật khẩu)"
+  password_resets:
+    edit:
+      title_html: "Đặt lại mật khẩu"
+      h1_html: "Đặt lại mật khẩu"
+    new:
+      title_html: "Quên mật khẩu"
+      h1_html: "Quên mật khẩu"

@@ -20,6 +20,9 @@ en:
   active_fail: "Invalid activation link"
   active_message: "Account not activated. Check your email for the activation link."
   active_danger: "Please check your email to activate your account."
+  notify_info: "Email sent with password reset instructions"
+  notify_danger_create: "Email address not found"
+  notify_danger_check_expiration: "Password reset has expired."
   layouts:
     header:
       home: "Home"
@@ -70,6 +73,13 @@ en:
       signup_now: "Register now!"
       submit: "Login"
       Remember_checkbox: "Remember me on this computer"
-
+      a_forgot_password: "(forgot password)"
+  password_resets:
+    edit:
+      title_html: "Reset password"
+      h1_html: "Reset password"
+    new:
+      title_html: "Forgot password"
+      h1_html: "Forgot password"
 
 
