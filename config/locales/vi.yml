@@ -1,12 +1,65 @@
 vi:
+  activerecord:
+    attributes:
+      user:
+        name: "Họ tên"
+        email: "Địa chỉ email"
+        password: "Mật khẩu"
+        password_confirmation: "Nhập Lại mật khẩu"
+  welcome_message: "Xin chào, <i>%{username}</i>"
+  email_or_password_incorrect: "Email hoặc mật khẩu vừa nhập không chính xác"
+  user_not_found: "User không tồn tại"
+  registration_failed: "vui lòng kiểm tra và nhập lại thông tin đăng kí"
+  login_invalid: "Email hoặc mật khẩu vừa nhập không chính xác"
+  Profile_updated: "Hồ sơ cá nhân đã cập nhật"
+  delete_success: "Người dùng đã bị xóa"
+  delete_fail: "Xóa thất bại!"
   sample_app: "Sample_App"
+  login: "Xin vui lòng đăng nhập."
+  active_sucess: "Tài khoản đã được kích hoạt!"
+  active_fail: "Liên kết kích hoạt không hợp lệ"
+  active_message: "Tài khoản chưa được kích hoạt.
+  Kiểm tra email của bạn để biết liên kết kích hoạt."
+  active_danger: "Hãy kiểm tra email của bạn để kích hoạt tài khoản của bạn."
+  notify_info: "Email được gửi kèm theo hướng dẫn đặt lại mật khẩu"
+  notify_danger_create: "Không tìm thấy địa chỉ email"
+  notify_danger_check_expiration: "Đặt lại mật khẩu đã hết hạn."
+  format_image: "phải là một định dạng hình ảnh hợp lệ"
+  size_image: "phải nhỏ hơn 5MB"
+  micropost_create_success: "Đã tạo micropost!"
+  micropost_destroy_success: "Micropost đã bị xóa"
+  micropost_destroy_danger: "Đã xóa không thành công"
+  not_permit: "người dùng không cho phép"
+  valid_user: "người dùng hợp lệ"
   layouts:
     header:
       home: "Trang Chủ"
       help: "Trợ Giúp"
       login: "Đăng Nhập"
+      signup: "Đăng ký"
+      profile: "Hồ sơ"
+      settings: "Cài đặt"
+      account: "Tài khoản"
+      logout: "Đăng xuất"
+      Users: "Danh sách người dùng"
+  shared:
+    error_messages:
+      please_resolve_errors:
+        one: "Xin hãy khắc phục %{count} lỗi"
+        other: "Xin hãy khắc phục %{count} lỗi"
+    user_info:
+      my_profile: "xem hồ sơ của tôi"
+      micropost: "micropost"
+    micropost_form:
+      content: "Soạn micropost mới ..."
+      type_image: "image/jpeg,image/gif,image/png"
+  microposts:
+    micropost:
+      button_delete: "Xóa"
+      confirm: "Bạn chắc chắn?"
   static_pages:
     home:
+      h3_html: "Nguồn cấp dữ liệu vi mô"
       h1_html: "Chào mừng đến với <i>Sample_App</i>"
       para_html: "Đây là trang chủ cho ứng dụng <a href=\"http://www.railstutorial.org\">Ruby on Rails Tutorial</a>."
       sign_up: "Đăng ký ngay"
@@ -18,3 +71,32 @@ vi:
       title: "Vấn đề?"
       h1_html: "<h1>Đang tìm kiếm <i><i>?</h1>"
       para_html: "Sách <a href=\"https://www.railstutorial.org/\"><em>Ruby on Rails Tutorial</em></a>, là sách dạy về lập trình <a href=\"https://rubyonrails.org/\">Ruby on Rails</a> Đây là ứng dụng mẫu cho hướng dẫn."
+  users:
+    new:
+      signup: "Đăng ký"
+      confirmation: "Xác nhận mật khẩu"
+      submit: "Tạo tài khoản"
+    index:
+      title: "Tất cả người dùng"
+    edit:
+      title: "Cập nhật người dùng"
+      h1_html: "Cập nhật thông tin của bạn"
+      submit: "Cập nhật thay đổi"
+      a_html: "<a href=\"https://gravatar.com/emails\" target=\"_blank\">Thay đổi</a>"
+    user:
+      delete_user: "Xoa"
+      confirm: "Ban chac chan ?"
+  sessions:
+    new:
+      new_user: "Đăng ký người dùng mới?"
+      signup_now: "Đăng ký ngay!"
+      submit: "Đăng nhập"
+      Remember_checkbox: "Ghi nhớ đăng nhập"
+      a_forgot_password: "(Quên mật khẩu)"
+  password_resets:
+    edit:
+      title_html: "Đặt lại mật khẩu"
+      h1_html: "Đặt lại mật khẩu"
+    new:
+      title_html: "Quên mật khẩu"
+      h1_html: "Quên mật khẩu"
