@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find_by id: params[:id]
+   load_user_or_redirect
     @microposts = @user.microposts.paginate(page: params[:page])
   end
 
@@ -44,7 +44,7 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    user = User.find_by id: params[:id]
+    load_user_or_redirect
     if user&.destroy
       flash[:success] = t "delete_success"
     else
@@ -52,7 +52,7 @@ class UsersController < ApplicationController
     end
     redirect_to users_url
   end
-
+  
   def following
     @title = "Following"
     @user = User.find_by(id: params[:id])
