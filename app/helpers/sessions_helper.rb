@@ -1,13 +1,6 @@
 module SessionsHelper
-  def log_in user, remember_me
+  def log_in user
     session[:user_id] = user.id
-    remember user if remember_me == "1"
-  end
-
-  def forget user
-    user.forget
-    cookies.delete(:user_id)
-    cookies.delete(:remember_token)
   end
 
   def remember user
@@ -36,6 +29,12 @@ module SessionsHelper
     current_user.present?
   end
 
+  def forget user
+    user.forget
+    cookies.delete(:user_id)
+    cookies.delete(:remember_token)
+  end
+  
   def log_out
     forget(current_user)
     session.delete(:user_id)

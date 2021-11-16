@@ -6,3 +6,5 @@ min_length:
 avatar:
   size: 80
   user_size: 50
+content:
+  length: 140

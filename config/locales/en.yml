@@ -23,6 +23,13 @@ en:
   notify_info: "Email sent with password reset instructions"
   notify_danger_create: "Email address not found"
   notify_danger_check_expiration: "Password reset has expired."
+  format_image: "must be a valid image format"
+  size_image: "should be less than 5MB"
+  micropost_create_success: "Micropost created!"
+  micropost_destroy_success: "Micropost deleted"
+  micropost_destroy_danger: "Deleted fail"
+  not_permit: "user not permit"
+  valid_user: "user is valid"
   layouts:
     header:
       home: "Home"
@@ -39,8 +46,19 @@ en:
       please_resolve_errors:
         one: "Please resolve %{count} error"
         other: "Please resolve %{count} errors"
+    user_info:
+      my_profile: "view my profile"
+      micropost: "micropost"
+    micropost_form:
+      content: "Compose new micropost..."
+      type_image: "image/jpeg,image/gif,image/png"
+  microposts:
+    micropost:
+      button_delete: "delete"
+      confirm: "You sure?"
   static_pages:
     home:
+      h3_html: "Micropost Feed"
       h1_html: "Welcome to <i>My Sample App</i>"
       para_html: "This is the home page for the <a href=\"http://www.railstutorial.org\">Ruby on Rails Tutorial</a> sample application."
       sign_up: "Sign up now!"

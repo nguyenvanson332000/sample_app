@@ -24,6 +24,13 @@ vi:
   notify_info: "Email được gửi kèm theo hướng dẫn đặt lại mật khẩu"
   notify_danger_create: "Không tìm thấy địa chỉ email"
   notify_danger_check_expiration: "Đặt lại mật khẩu đã hết hạn."
+  format_image: "phải là một định dạng hình ảnh hợp lệ"
+  size_image: "phải nhỏ hơn 5MB"
+  micropost_create_success: "Đã tạo micropost!"
+  micropost_destroy_success: "Micropost đã bị xóa"
+  micropost_destroy_danger: "Đã xóa không thành công"
+  not_permit: "người dùng không cho phép"
+  valid_user: "người dùng hợp lệ"
   layouts:
     header:
       home: "Trang Chủ"
@@ -40,8 +47,19 @@ vi:
       please_resolve_errors:
         one: "Xin hãy khắc phục %{count} lỗi"
         other: "Xin hãy khắc phục %{count} lỗi"
+    user_info:
+      my_profile: "xem hồ sơ của tôi"
+      micropost: "micropost"
+    micropost_form:
+      content: "Soạn micropost mới ..."
+      type_image: "image/jpeg,image/gif,image/png"
+  microposts:
+    micropost:
+      button_delete: "Xóa"
+      confirm: "Bạn chắc chắn?"
   static_pages:
     home:
+      h3_html: "Nguồn cấp dữ liệu vi mô"
       h1_html: "Chào mừng đến với <i>Sample_App</i>"
       para_html: "Đây là trang chủ cho ứng dụng <a href=\"http://www.railstutorial.org\">Ruby on Rails Tutorial</a>."
       sign_up: "Đăng ký ngay"

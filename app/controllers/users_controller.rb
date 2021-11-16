@@ -9,6 +9,7 @@ class UsersController < ApplicationController
 
   def show
     load_user_or_redirect
+    @microposts = @user.microposts.paginate(page: params[:page])
   end
 
   def new
@@ -37,7 +38,7 @@ class UsersController < ApplicationController
       flash[:success] = t "Profile_updated"
       redirect_to @user
     else
-      render "edit"
+      render :edit
     end
   end
 

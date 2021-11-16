@@ -14,7 +14,8 @@ class SessionsController < ApplicationController
 
   def handle_authenticated session_params
     if @user.activated
-      log_in @user, session_params[:remember_me]
+      log_in @user
+      session_params[:remember_me] == "1" ? remember(@user) : forget(@user)
       flash[:success] = t "welcome_message", username: @user.name
       redirect_back_or @user
     else
