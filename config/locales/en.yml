@@ -30,6 +30,7 @@ en:
   micropost_destroy_danger: "Deleted fail"
   not_permit: "user not permit"
   valid_user: "user is valid"
+  layouts:
     header:
       home: "Home"
       help: "Help"
